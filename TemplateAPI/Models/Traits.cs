@@ -7,12 +7,12 @@ namespace TemplateAPI.Models
 
 	[Flags]
 	[JsonConverter(typeof(JsonStringEnumConverter))] // needed to serialise to JSON properly
-	public enum Rights
+	public enum Traits
 	{
-		CanLogin = 1,
-		CanFeedTheCat = 2,
-		CanOperateCementMixer = 4,
-		CanChangeTheMusic = 8,
-		CanOpenTheFridge = 16
+		Reasonable = 1,
+		GoodInAFight = 2,
+		Eccentric = 4,
+		Duplicitous = 8,
+		ThickAsMince = 16
 	}
 }
